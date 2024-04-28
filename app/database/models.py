@@ -30,3 +30,12 @@ class ChangeDB(ChangeBase, table=True):
 
 class ChangeCreate(ChangeBase):
   pass
+""" 
+class BlockBase(SQLModel):
+  id: int = Field(default=None, primary_key=True)
+
+class BlockDB(BlockBase, table=True):
+  sensorID: int
+
+class BlockCreate(BlockBase):
+  pass """
