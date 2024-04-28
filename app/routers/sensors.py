@@ -4,7 +4,7 @@ from ..database.models import SensorBase, SensorDB, SensorCreate
 from ..database import sensors_crud
 from ..database.database import get_session
 
-router = APIRouter(prefix='/sensors')
+router = APIRouter(prefix='/sensors', tags=['Sensors'])
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 def create_sensor(*, session: Session = Depends(get_session), sensor_in: SensorCreate):

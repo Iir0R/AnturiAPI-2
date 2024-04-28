@@ -1,0 +1,4 @@
+Luokkia ja endpoitteja tehdessä oletus oli, että yhtä kutsumalla tehdään useampi asia kerralla (esim. uusi luotu muutos kun anturin tila vaihtuu). Classien kanssa syntyi ongelmia, joten niiden kanssa piti vähän soveltaa. Ajan lisääminen luotuun objektiin ei onnistunut. Sama ongelma muutosten luomisen kanssa. Uuteen anturiin lisätään lohkon ID, koska usean objektin luominen ja samojen tietojen saaminen toiseen aiheutti ongelmia.
+Metodit valittiin sen perusteella, mikä mihinkin sopi, esim. hakuun GET, päivittämiseen PUT jne.
+
+Tein työtä alunperin koodaamalla kaiken samaan tiedostoon, mutta voi olla parempi hajoittaa sitä pienempiin osiin eri tiedostoihin jo alusta lähtien. Koodia joutuu kuitenkin muuttamaan, kun otetaan mukaan databaset yms. Esim. jotkin koodinpätkät oli helpompi tehdä käyttäen sqlmodelia.

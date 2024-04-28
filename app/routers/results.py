@@ -4,7 +4,7 @@ from ..database.models import ResultBase, ResultDB, ResultCreate
 from ..database import results_crud
 from ..database.database import get_session
 
-router = APIRouter(prefix='/results')
+router = APIRouter(prefix='/results', tags=['Results'])
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 def create_result(*, session: Session = Depends(get_session), result_in: ResultCreate):
